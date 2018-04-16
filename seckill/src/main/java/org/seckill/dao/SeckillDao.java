@@ -1,0 +1,35 @@
+package org.seckill.dao;
+
+import java.util.Date;
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+import org.seckill.entiy.Seckill;
+
+//秒杀dao层接口
+public interface SeckillDao {
+
+	/**
+	 * 减库存
+	 * @param seckillId
+	 * @param killTime
+	 * @return
+	 */
+	int reduceNumber(@Param("seckillId") long seckillId , @Param("killTime") Date killTime);
+	
+	/**
+	 * 通过seckillId查询单个秒杀库存
+	 * @param seckillId
+	 * @return
+	 */
+	Seckill queryById(long seckillId);
+	
+	/**
+	 * 根据偏移量查询所有的秒杀库存
+	 * @param offset
+	 * @param limit
+	 * @return
+	 */
+	List<Seckill> queryAll(@Param("offset") int offset , @Param("limit") int limit);
+	
+}
