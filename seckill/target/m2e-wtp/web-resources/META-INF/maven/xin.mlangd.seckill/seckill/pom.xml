@@ -81,13 +81,21 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.5.4</version>
 		</dependency>
+		<!-- <dependency> <groupId>javax.servlet</groupId> <artifactId>javax.servlet-api</artifactId> 
+			<version>3.1.0</version> <scope>provided</scope> </dependency> -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
 			<scope>provided</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+		
 		<!-- 4、spring依赖 -->
 		<!-- 1)spring核心依赖 -->
 		<dependency>
@@ -133,15 +141,14 @@
 			<artifactId>spring-test</artifactId>
 			<version>4.1.7.RELEASE</version>
 		</dependency>
-
+		
 	</dependencies>
 	<build>
-		<!-- 配置了很多插件 -->
 		<plugins>
+			<!-- 设置编译版本为1.8 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
@@ -149,12 +156,15 @@
 				</configuration>
 			</plugin>
 
+			<!-- maven内置 的tomcat7插件 -->
 			<plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-			</plugin>
+          		<groupId>org.apache.tomcat.maven</groupId>
+          		<artifactId>tomcat7-maven-plugin</artifactId>
+          		<version>2.2</version>
+        	</plugin>
+
 		</plugins>
+		
 	</build>
 
 </project>

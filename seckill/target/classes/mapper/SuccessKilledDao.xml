@@ -7,8 +7,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<insert id="insertSuccessKilled">
 		<!-- 主键冲突，会报错 -->
-		insert ignore into success_killed(seckill_id,user_phone)
-		values(#{seckillId},#{userPhone});
+		insert ignore into success_killed(seckill_id,user_phone,state)
+		values(#{seckillId},#{userPhone},1);
 	</insert>
 	
 	<select id="queryByIdWithSeckill" resultType="SuccessKilled">
