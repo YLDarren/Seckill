@@ -222,13 +222,13 @@ mvn archetype:generate -DgroupId=org -DartifactId=seckill -DarchetypeArtifactId=
 ```
 
 ### 秒杀业务分析
-1、秒杀系统业务流程
+ 1、秒杀系统业务流程
 ![](https://github.com/YLDarren/Seckill/blob/master/img/dao5.png)
-2、用户针对库存业务分析 
+ 2、用户针对库存业务分析 
 ![](https://github.com/YLDarren/Seckill/blob/master/img/dao6.png)
-3、什么是购买行为 
+ 3、什么是购买行为 
 ![](https://github.com/YLDarren/Seckill/blob/master/img/dao7.png)
-4、为什么需要事务 
+ 4、为什么需要事务 
 ![](https://github.com/YLDarren/Seckill/blob/master/img/dao8.png)
 
 ### 实现哪些秒杀功能
