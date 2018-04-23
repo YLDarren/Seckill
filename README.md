@@ -1,10 +1,13 @@
 ## 秒杀系统（ssm）
-![跟着慕课网学习秒杀系统](https://www.imooc.com/u/2145618/courses?sort=publish)
+[跟着慕课网学习秒杀系统](https://www.imooc.com/u/2145618/courses?sort=publish)
 
 ### java高并发秒杀API之业务分析与Dao
 
 ### 效果展示
-图片
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao1.png)
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao2.png)
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao3.png)
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao4.png)
 
 ### 相关技术介绍
 
@@ -219,10 +222,14 @@ mvn archetype:generate -DgroupId=org -DartifactId=seckill -DarchetypeArtifactId=
 ```
 
 ### 秒杀业务分析
-1、秒杀系统业务流程（图片5）
-2、用户针对库存业务分析 （图片6）
-3、什么是购买行为 （图片7）
-4、为什么需要事务 （图片8）
+1、秒杀系统业务流程
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao5.png)
+2、用户针对库存业务分析 
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao6.png)
+3、什么是购买行为 
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao7.png)
+4、为什么需要事务 
+![](https://github.com/YLDarren/Seckill/blob/master/img/dao8.png)
 
 ### 实现哪些秒杀功能
 1、秒杀接口暴露
